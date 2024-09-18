@@ -1,15 +1,15 @@
 import React from "react";
 import "./PaginaInicial.css"
 import { useState } from 'react';
+import tomate from '../assets/laranja.png';
+import Imagem02 from '../assets/limão.png';
+import Imagem03 from '../assets/jaca.png';
+import Imagem04 from '../assets/goiaba.png';
+import Imagem05 from '../assets/framboesa.png';
+import Imagem06 from '../assets/damasco.png';
 import { Link } from 'react-router-dom';
-import ImgI from '../assets/imagem_interativa.png';
-import Imagem4 from '../assets/img4.png';
-import Imagem5 from '../assets/img5.png';
-import Imagem6 from '../assets/img6.png';
-import Imagem01 from '../assets/img01.png';
-import Imagem02 from '../assets/img02.png';
 
-const PaginaWindows = () => {
+const PaginaTerror = () => {
         const [isOpen, setIsOpen] = useState({
                 genero: true,
                 plataformas: true,
@@ -33,7 +33,7 @@ const PaginaWindows = () => {
                                 </nav>
                                 <div className="search"><i className="fas fa-search"></i>
                                         <input type="text" placeholder="Search..." />
-                                        <Link to={'/Login'}><button className="login-btn"><i className="fas fa-user-circle"></i>Log In</button></Link>
+                                        <button className="login-btn"><i className="fas fa-user-circle"></i>Log In</button>
                                 </div>
                         </header>
 
@@ -47,7 +47,6 @@ const PaginaWindows = () => {
                                                 </h1>
                                                 {isOpen.genero && (
                                                         <>
-
                                                                 <a href="" style={{ margin: '3px 10px', padding: '0' }}><i className="fas fa-gamepad"></i>Terror</a>
                                                                 <a href="" style={{ margin: '3px 10px', padding: '0' }}><i className="fas fa-gamepad"></i>Esporte</a>
                                                                 <a href="" style={{ margin: '3px 10px', padding: '0' }}><i className="fas fa-gamepad"></i>Aventura</a>
@@ -93,33 +92,33 @@ const PaginaWindows = () => {
                                 </section>
                                 <section className="games-section">
                                         <div className="S">
-                                                <img src={ImgI} alt="Happy Cat Tavern" />
-                                                <a href="">Happy Cat Tavern</a>
+                                                <img src={laranja} alt="Wheelchair Basktball" />
+                                                <a href="Wheelchair Basktball"></a>
                                         </div>
                                         <div className="S">
-                                                <img src={Imagem01} alt="Subida de pomba" />
-                                                <a href="">Subida de pomba</a>
+                                                <img src={limão} alt="Cage fight" />
+                                                <a href="Cage fight"></a>
                                         </div>
                                         <div className="S">
-                                                <img src={Imagem02} alt="Hero's Hour" />
-                                                <a href="">Hero's Hour</a>
+                                                <img src={pera} alt="College Slam" />
+                                                <a href="College Slam"></a>
                                         </div>
                                         <section className="games-section1">
                                                 <div className="S">
-                                                        <img src={Imagem4} alt="Bug Fables" />
-                                                        <a href="">Bug Fables</a>
+                                                        <img src={mamão} alt="Football Drama" />
+                                                        <a href="Football Drama">e</a>
                                                 </div>
                                                 <div className="S">
-                                                        <img src={Imagem5} alt="Hedon Bloodrite" />
-                                                        <a href="">Hedon Bloodrite</a>
+                                                        <img src={manga} alt="Skatebird" />
+                                                        <a href="Skatebird"></a>
                                                 </div>
                                                 <div className="S">
-                                                        <img src={Imagem6} alt="Buck up and drive" />
-                                                        <a href="">Buck up and drive</a>
+                                                        <img src={morango} alt="Super video Golf" />
+                                                        <a href="Super video Golf"></a>
                                                 </div>
                                         </section>
                                 </section>
                         </main></div>
         );
 };
-export default PaginaWindows;
+export default PaginaTerror;

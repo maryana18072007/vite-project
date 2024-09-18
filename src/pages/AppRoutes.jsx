@@ -5,6 +5,7 @@ import PaginaLogin from "./PaginaLogin";
 import PaginaCartas from "./PaginaCartas";
 import PaginaCadastro from "./PaginaCadastro";
 import PaginaWindows from "./PaginaWindows";
+import PaginaTerror from "./PaginaTerror";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const AppRoutes = () => {
@@ -17,6 +18,8 @@ const AppRoutes = () => {
         <Route path="/Cartas" element={<PaginaCartas />} />
         <Route path="/Cadastro" element={<PaginaCadastro />} />
         <Route path="/Windows" element={<PaginaWindows />} />
+        <Route path="/Terror" element={<PaginaTerror/>} />
+        <Route path="/Esporte" element={<PaginaEsporte/>} />
       </Routes>
     </Router>
   );
