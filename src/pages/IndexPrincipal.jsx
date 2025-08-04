@@ -165,7 +165,30 @@ const IndexPrincipal = () => {
             <p>
               Game Legends é uma plataforma dedicada a jogos indie, fornecendo uma maneira fácil para desenvolvedores distribuírem seus jogos e para jogadores descobrirem novas experiências.
             </p>
+            <div className="contato-rodape">
+              <span><i className="fas fa-phone"></i> &nbsp; (99) 99999-9999</span>
+              <span><i className="fas fa-envelope"></i> &nbsp; info@gamelegends.com</span>
+            </div>
+            <div className="redes-sociais">
+              <a href="#"><i className="fab fa-facebook"></i></a>
+              <a href="#"><i className="fab fa-twitter"></i></a>
+              <a href="#"><i className="fab fa-instagram"></i></a>
+              <a href="#"><i className="fab fa-linkedin"></i></a>
+            </div>
           </div>
+          <div className="secao-rodape links">
+            <h2>Links Rápidos</h2>
+            <ul>
+              <a href="#"><li>Eventos</li></a>
+              <a href="#"><li>Equipe</li></a>
+              <a href="#"><li>Missão</li></a>
+              <a href="#"><li>Serviços</li></a>
+              <a href="#"><li>Afiliados</li></a>
+            </ul>
+          </div>
+        </div>
+        <div className="rodape-inferior">
+          &copy; gamelegends.com | Feito pelo time do Game Legends 
         </div>
       </footer>
     </div>
