@@ -16,11 +16,10 @@ const PaginaInicial = () => {
     const [projetos, setProjetos] = useState([]);
     const [formData, setFormData] = useState({
         email: "",
-        usuario: "" // Pode ser "Cliente" ou "Desenvolvedor"
+        usuario: ""
     });
 
     useEffect(() => {
-        // Fetch projects from API
         fetch('http://localhost:8080/projetos')
             .then(response => {
                 if (!response.ok) {
@@ -31,12 +30,11 @@ const PaginaInicial = () => {
             .then(data => setProjetos(data))
             .catch(error => console.error("Erro ao carregar projetos:", error));
 
-        // Verifica se o usuário está logado/cadastrado ao carregar a página
         const usuarioData = JSON.parse(localStorage.getItem('usuario'));
         if (usuarioData) {
             setFormData({
                 email: usuarioData.email,
-                usuario: usuarioData.usuario // "Cliente" ou "Desenvolvedor"
+                usuario: usuarioData.usuario
             });
         }
     }, []);
@@ -53,9 +51,7 @@ const PaginaInicial = () => {
         setIsMobileOpen(!isMobileOpen);
     };
 
-    // Função utilitária para obter a URL da imagem do projeto (retorna endpoint de bytes)
     const getProjetoImagem = (projeto) => {
-        // Sempre retorna o endpoint que serve o byte[] convertido em imagem
         return `http://localhost:8080/projetos/${projeto.id}/foto`;
     };
 
@@ -145,8 +141,8 @@ const PaginaInicial = () => {
                         {isOpen.postagem && (
                             <>
                                 <Link to={'/Hoje'}><i className="far fa-clock"></i> Hoje</Link>
-                                <Link to={'/EssaSemana'}><i className="far fa-clock"></i> Essa semana</Link>
-                                <Link to={'/EsseMes'}><i className="far fa-clock"></i> Esse mês</Link>
+                                <Link to={'/Essasemana'}><i className="far fa-clock"></i> Essa semana</Link>
+                                <Link to={'/Essemes'}><i className="far fa-clock"></i> Esse mês</Link>
                             </>
                         )}
                         <h1 onClick={() => toggleList('status')}>

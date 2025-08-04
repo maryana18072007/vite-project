@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import IndexPrincipal from "./IndexPrincipal"; //IGNORE!! Funciona, só é bug!
+import IndexPrincipal from "./IndexPrincipal";
 import PaginaInicial from "./PaginaInicial";
 import PaginaSobrevivencia from "../category/Sobrevivencia";
 import PaginaLogin from "../Cadastro-Login/PaginaLogin";
